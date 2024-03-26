@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CargoGo</title>
-    <link rel="stylesheet" href="">
-    <style>
-       
-    </style>
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"> <a href="homepage.html"> CargoGo </a></div>
+        <nav class="navbar">
+            <div class="menu-icon">
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+            </div>
+            <ul class="nav__links">
+                <li><a class="a_li" href="homepage.html">Home</a></li>
+                <li><a class="a_li" href="aboutus.html">About us</a></li>
+                <li><a class="a_li" href="shop.html">Shop</a></li>
+                <li><a class="a_li" href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
 
-    <body>
-        <header class="banner">
+    </header>
+
+    <section>
+        <img class="bannerfoto" src="Images/fotobanner.png" alt="Fotobanner">
+        <article id="bannertexthome">
+            <img class="logo_banner" src="Images/logo.png">
+        </article>
         
-            <nav class="navbar" >
-                    <div class="logonav"> <img src="Images/logo.png"></div>
-                <ul class="nav-ul navuc">
-    
-                    <li><a href="homepage.html" class="nav-uc"> Home</a></li>
-                    <li><a href="aboutus.html" class="nav-uc"> About us </a></li>
-                    <li><a href="shop.html" class="nav-uc"> Shop </a></li>
-                    <li><a href="blog.html" class="nav-uc"> Blog </a></li>
-                    
-                </ul>
-            </nav>
-        
-            <section>
-                <img class="bannerfoto" src="" alt="Fotobanner">
-                <article id="bannertexthome">
-                    <h1 class="titlebanneruc"> CargoGo </h1>
-                </article>
-                
-            </section>
-        
-           </header> 
-    </body>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav__links');
+
+            menuIcon.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
+
+</body>
 </html>
