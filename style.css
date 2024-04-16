@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -101,9 +101,9 @@ header {
     position: relative;
 }
 
-.bannerfoto {
+.fotobanner {
     width: 100%;
-    height: 750px;
+    height: 760px;
     object-fit: cover;
 }
 
@@ -262,4 +262,53 @@ a{
         font-size: 16px; /* Verklein de lettergrootte van de knop voor kleinere schermen */
         margin-left: 10px; /* Verplaats de knop iets meer naar rechts */
     }
+}
+
+.overzicht1 {
+    margin-top: 250px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center; /* Verticale uitlijning van tekst en afbeelding */
+}
+
+.text {
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+    margin-left: 200px;
+    padding-right: 130px;
+}
+
+.overzichtpic1 {
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+    height: 450px; /* Aangepaste hoogte van de afbeelding */
+    margin-right: 200px;
+    border-radius: 5px;
+}
+
+.samen_naar {
+    margin-top: 40px; /* Meer ruimte boven de titel */
+    margin-bottom: 20px;
+    font-family: "Amaranth", cursive;
+    color: #467255;
+    font-size: 50px;
+}
+
+.aboutus_ov {
+    margin-top: 20px; /* Meer ruimte onder de titel */
+    font-family: "Quicksand" , sans-serif , bold;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.button1_readmore {
+    margin-top: 40px; /* Meer ruimte tussen tekst en knop */
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#467255;
+    color: aliceblue;
+    border:none;
+}
+
+.link1_readmore {
+    color: white;
 }
