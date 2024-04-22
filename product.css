@@ -108,7 +108,9 @@ a{
 section {
     margin-top: 500px; /* Verplaats alleen de sectie 500 pixels naar beneden */
 }
-
+h2{
+    font-size: 24px;
+}
 h3 {
     text-align: center;
     font-size: 24px;
@@ -129,6 +131,16 @@ h3 {
     cursor: pointer;
 }
 .buyButton{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#467255;
+    color: aliceblue;
+    border:none;
+    /* klad
     top: 50%;
     left: 10%;
     font-size: 30px;
@@ -138,7 +150,7 @@ h3 {
     background-color:rgb(217, 222, 194); 
     z-index: 1;
     cursor: pointer;
-    
+    */
 }
 
 .buyButton.buyButton:hover{
@@ -174,13 +186,16 @@ h3 {
 }
 
 .sliderTitel {
-    font-size: 16px;
-    margin-top: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 26px;
+    
 }
 
 .sliderPrice {
-    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
     margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .product{
