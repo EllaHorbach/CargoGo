@@ -101,26 +101,15 @@ header {
     position: relative;
 }
 
-.bannerfoto {
+.fotobanner {
     width: 100%;
     height: 750px;
     object-fit: cover;
 }
 
-#bannertexthome {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.logo_banner {
-    width: 750px;
-    height: 750px;
-}
 
 
+/*ELLA*/
 /*body {
     
     margin: 0;
@@ -128,6 +117,7 @@ header {
     padding-right: 10px;
 }
 */
+
 a{
     
     color: black;
@@ -258,5 +248,108 @@ a{
     .productButton {
         font-size: 16px; /* Verklein de lettergrootte van de knop voor kleinere schermen */
         margin-left: 10px; /* Verplaats de knop iets meer naar rechts */
+    }
+}
+
+/*ELLA end*/
+
+.overzicht1 {
+    margin-top: 250px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center; /* Verticale uitlijning van tekst en afbeelding */
+}
+
+.text1 {
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+    margin-left: 210px;
+    padding-right: 130px;
+}
+
+.overzichtpic1 {
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+    height: 450px; /* Aangepaste hoogte van de afbeelding */
+    margin-right: 200px;
+}
+
+.samen_naar {
+    margin-top: 40px; /* Meer ruimte boven de titel */
+    margin-bottom: 20px;
+    font-family: "Amaranth", cursive;
+    color: #467255;
+    font-size: 50px;
+}
+
+.aboutus_ov {
+    margin-top: 20px; /* Meer ruimte onder de titel */
+    font-family: "Quicksand" , sans-serif , bold;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.button1_readmore {
+    margin-top: 40px; /* Meer ruimte tussen tekst en knop */
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#467255;
+    color: aliceblue;
+    border:none;
+}
+
+.link1_readmore {
+    color:aliceblue;
+    font-family: "Quicksand", bold;
+}
+
+/* Media query voor tabletweergave */
+@media screen and (max-width: 768px) {
+    .overzicht1 {
+        flex-direction: column; /* Stel verticale weergave in */
+        text-align: center; /* Centreer de tekst en de afbeelding */
+    }
+
+    .text1 {
+        margin-left: 50px; /* Verwijder de linkermarge */
+        padding-right: 50px; /* Verwijder de rechtervulling */
+    }
+
+    .overzichtpic1 {
+        width: 500px;
+        height: 300px;
+        margin-right: 50px; /* Verwijder de rechtermarge */
+        margin-left: 50px;
+        margin-bottom: 20px; /* Voeg ruimte toe onder de afbeelding */
+        margin-top: 50px;
+    }
+}
+
+/* Media query voor GSM-weergave */
+@media screen and (max-width: 480px) {
+
+    .text1 {
+        padding: 0 20px; /* Voeg ruimte toe aan beide zijden van de tekst */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .overzichtpic1 {
+        height: auto; /* Verwijder de vaste hoogte en laat de hoogte zich aanpassen aan de breedte */
+        width: 300px;
+        padding-right: 0px;
+        margin-bottom: 20px; /* Voeg ruimte toe onder de afbeelding */
+    }
+
+    .samen_naar {
+        font-size: 40px; /* Verminder de grootte van de titel voor GSM */
+    }
+
+    .aboutus_ov {
+        font-size: 20px; /* Verminder de grootte van de tekst voor GSM */
+    }
+
+    .button1_readmore {
+        margin-top: 30px; /* Verminder de ruimte tussen tekst en knop voor GSM */
+        font-size: 16px; /* Verminder de grootte van de knop voor GSM */
     }
 }
