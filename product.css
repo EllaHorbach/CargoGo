@@ -1,0 +1,263 @@
+body {
+    
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.a_li {
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(9, 9, 9);
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #467255;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 45px;
+}
+
+.logo a {
+    font-family: "Amaranth", cursive;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links li {
+    margin-left: 60px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    background-color: rgba(161, 235, 162, 0.845);
+    padding: 15px;
+    border-radius: 5%;
+}
+
+.menu-icon {
+    display: none; /* Hide the menu icon by default */
+    cursor: pointer;
+}
+
+.menu-icon__line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .nav__links {
+        display: none; 
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #467255;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .nav__links.show {
+        display: flex; 
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+
+    .nav__links li {
+        margin-bottom: 25px; 
+    }
+}
+
+a{
+    
+    color: black;
+    text-decoration: none;
+}
+section {
+    margin-top: 500px; /* Verplaats alleen de sectie 500 pixels naar beneden */
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.colour-select {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Verplaats de kleurselectie 10 pixels naar beneden */
+}
+
+.colour-select div {
+    background: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.buyButton{
+    top: 50%;
+    left: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(10, 87, 6);
+    border: 1px solid gray;
+    background-color:rgb(217, 222, 194); 
+    z-index: 1;
+    cursor: pointer;
+    
+}
+
+.buyButton.buyButton:hover{
+    background-color: rgb(132, 176, 138);
+    color: rgb(10, 87, 6);
+}
+
+
+.sliderRow {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sliderWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Hiermee worden de items verdeeld in rijen van minimaal 45% breedte, maar zich aanpassend aan de beschikbare ruimte */
+    grid-gap: 20px; /* Ruimte tussen de grid-items */
+}
+
+.sliderItem {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sliderImg {
+    max-width: 80%;
+    height: auto;
+    width: 100%; /* Afbeeldingen worden 100% breedte van hun container */
+    object-fit: cover; /* Behoudt de aspect ratio en zorgt ervoor dat de afbeelding het hele gebied vult */
+}
+
+.sliderTitel {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.sliderPrice {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.product{
+    height: 100vh;
+    
+ }
+ .productDetails{
+    position: absolute;
+    padding: 50px;
+ }
+ .productButton{
+    top: 50%;
+    left: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(10, 87, 6);
+    border: 1px solid gray;
+    background-color:rgb(237, 234, 234); 
+    z-index: 1;
+    cursor: pointer;
+    
+    
+    
+ }
+ .productButton:hover{
+    background-color: rgb(132, 176, 138);
+    color: rgb(10, 87, 6);
+ }
+ .productDesc{
+    color: grey;
+   
+ }
+ 
+ .productImg{
+    padding: 50px;
+    
+ }
+
+
+
+ @media screen and (max-width: 768px) {
+    .sliderItem {
+        width: 100%; /* Elk item neemt de volledige breedte van de container in */
+        margin-bottom: 20px; /* Voeg wat ruimte toe onder elk item */
+    }
+
+    .sliderWrapper {
+        display: flex;
+        flex-direction: column; /* Verander de richting naar kolom voor kleinere schermen */
+        align-items: center; /* Centreer de items in de kolom */
+    }
+
+    .sliderItem .sliderImg {
+        max-width: 100%; /* Afbeeldingen worden 100% breedte van hun container */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .productImg {
+        max-width: 100%; /* Afbeelding neemt de volledige breedte van de container in */
+        height: auto; /* Zorgt ervoor dat de hoogte automatisch wordt aangepast om de verhoudingen te behouden */
+        padding: 10px; /* Verminder de padding van de afbeelding */
+    }
+
+    .productDetails {
+        padding: 10px; /* Verminder de padding van de productdetails */
+    }
+
+    .productButton {
+        font-size: 16px; /* Verklein de lettergrootte van de knop voor kleinere schermen */
+        margin-left: 10px; /* Verplaats de knop iets meer naar rechts */
+    }
+}
+
+
+
+.choose_color {
+    margin-top: 700px;;
+} 
