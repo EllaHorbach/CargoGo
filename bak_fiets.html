@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
     <title>CargoGo</title>
 </head>
 <body>
@@ -25,7 +25,16 @@
         </nav>
 
     </header>
+    <section class="choose_color">
+        <h3> Choose your colour</h3>
+        <div class="colour-select">
+            <div id="red "></div>
+            <div id="blue "></div>
+            <div id="white "></div>
+        </div>
+    </section>
     <div class="product">
+        
         <img src="./img_producten/bak_fiets_blauw.jpg" alt="" class="productImg" height="560px">
         <div class="productDetails">
             <h1 class="productTitel">klassieke bakfiets</h1>
@@ -37,7 +46,18 @@
                 
             </p>
         </div>
+        
         <button class="productButton">BUY NOW!</button>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav__links');
+
+            menuIcon.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
 </html>
