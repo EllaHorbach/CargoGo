@@ -115,11 +115,7 @@ h3 {
     font-size: 24px;
 }
 
-.colour-select {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Verplaats de kleurselectie 10 pixels naar beneden */
-}
+
 
 .colour-select div {
     background: #333;
@@ -129,6 +125,22 @@ h3 {
     margin-right: 10px;
     cursor: pointer;
 }
+.colour-select {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Verplaats de kleurselectie 10 pixels naar beneden */
+}
+
+.colour-select #red{
+    background: red;
+}
+.colour-select #blue{
+    background: steelblue;
+}.colour-select #white{
+    background: white;
+}
+
+
 
 .buyButton {
     font-family: "Quicksand", sans-serif;
@@ -261,7 +273,7 @@ h3 {
         height: auto; /* Zorg ervoor dat de hoogte automatisch wordt aangepast */
     }
     /* Verhoog de grootte van de Choose your color-sectie */
-    .choose_color {
+    .colour-select {
         position: absolute;
         top: calc(50% - 300px); /* Houd de positie in de y-richting hetzelfde */
         left: calc(10% + 770px); /* Verhoog de linkerpositie met 200px */
@@ -279,14 +291,14 @@ h3 {
 
     /* Verhoog de grootte van de p */
     .productDesc {
-        font-size: 28px; /* Verhoog de lettergrootte van p met 100px */
+        font-size: 26px; /* Verhoog de lettergrootte van p met 100px */
     }
 }
 
 /* Responsive aanpassingen alleen voor telefoonformaat */
 @media screen and (max-width: 768px) {
     /* De "Choose your color" sectie op dezelfde hoogte als de knop plaatsen, met 20px extra in de x-richting */
-    .choose_color {
+    .colour-select {
         position: absolute;
         top: calc(50% + 150px); /* Plaats de sectie op dezelfde hoogte als de knop, maar 400px naar beneden */
         left: calc(10% + 300px); /* Voeg 20px extra toe aan de linkerpositie vanaf de linkerkant van het scherm */
