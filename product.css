@@ -131,13 +131,28 @@ h3 {
     margin-top: 10px; /* Verplaats de kleurselectie 10 pixels naar beneden */
 }
 
+
+.colour-select {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Verplaats de kleurselectie 10 pixels naar beneden */
+}
+
 .colour-select #red{
     background: red;
+    border: 1px solid black;
+    margin-left: 5px;
+    
+  
 }
 .colour-select #blue{
     background: steelblue;
-}.colour-select #white{
+    border: 1px solid black;
+
+}
+.colour-select #white{
     background: white;
+    border: 1px solid black;
 }
 
 
@@ -263,6 +278,8 @@ h3 {
 
 /* Responsive aanpassingen alleen voor computerscherm */
 @media screen and (min-width: 1024px) {
+
+    
     /* Verhoog de grootte van de button */
     .productButton {
         font-size: 30px; /* Verhoog de lettergrootte van de button met 100px */
@@ -277,6 +294,8 @@ h3 {
         position: absolute;
         top: calc(50% - 300px); /* Houd de positie in de y-richting hetzelfde */
         left: calc(10% + 770px); /* Verhoog de linkerpositie met 200px */
+
+       
     }
 
     /* Verhoog de grootte van de h1 */
@@ -293,6 +312,12 @@ h3 {
     .productDesc {
         font-size: 26px; /* Verhoog de lettergrootte van p met 100px */
     }
+
+   
+    
+    
+    
+    
 }
 
 /* Responsive aanpassingen alleen voor telefoonformaat */
@@ -300,9 +325,11 @@ h3 {
     /* De "Choose your color" sectie op dezelfde hoogte als de knop plaatsen, met 20px extra in de x-richting */
     .colour-select {
         position: absolute;
-        top: calc(50% + 150px); /* Plaats de sectie op dezelfde hoogte als de knop, maar 400px naar beneden */
-        left: calc(10% + 300px); /* Voeg 20px extra toe aan de linkerpositie vanaf de linkerkant van het scherm */
+        top: calc(40% + 400px); /* Plaats de sectie op dezelfde hoogte als de knop, maar 400px naar beneden */
+        left: calc(10% + 200px); /* Voeg 20px extra toe aan de linkerpositie vanaf de linkerkant van het scherm */
         transform: translateY(-50%); /* Om het exact in het midden te positioneren verticaal */
+        width: 350px;
+        height: 350px;
     }
 
     /* De afbeelding verkleinen zodat hij volledig op het scherm past op een telefoon */
@@ -319,3 +346,12 @@ h3 {
         margin-top: 80px;
     }
 }
+
+
+
+
+
+
+
+
+
