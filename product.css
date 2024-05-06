@@ -279,6 +279,9 @@ h3 {
 /* Responsive aanpassingen alleen voor computerscherm */
 @media screen and (min-width: 1024px) {
 
+    h3 {
+        font-size: 32px; /* Vergroot de lettergrootte van h3 voor pc */
+    }
     
     /* Verhoog de grootte van de button */
     .productButton {
@@ -294,7 +297,7 @@ h3 {
         position: absolute;
         top: calc(50% - 300px); /* Houd de positie in de y-richting hetzelfde */
         left: calc(10% + 770px); /* Verhoog de linkerpositie met 200px */
-
+        
        
     }
 
@@ -314,8 +317,6 @@ h3 {
     }
 
    
-    
-    
     
     
 }
@@ -346,6 +347,15 @@ h3 {
         margin-top: 80px;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 
