@@ -349,6 +349,33 @@ h3 {
 }
 
 
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+ }
+ .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centreer de items horizontaal */
+    text-align: center; /* Centreer de tekst */
+ }
+ .featureIcon{
+    width: 50px;
+    height: 50px;
+ }
+ .featureTitel{
+    font-size: 20px;
+    font-weight: 300px;
+    margin: 20px;
+ }
+ .featureDesc{
+    color: grey;
+    width: 50%;
+    height: 100px;
+ }
+
 
 
 
