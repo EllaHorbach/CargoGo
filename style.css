@@ -148,7 +148,7 @@ header {
     margin-top: 20px; /* Meer ruimte onder de titel */
     font-family: "Quicksand" , sans-serif , bold;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .button1_readmore {
@@ -224,7 +224,7 @@ header {
     margin: auto;
     overflow: hidden;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     margin-top:110px;
     border: 15px solid #467255;
 }
@@ -281,7 +281,7 @@ header {
     margin-top: 20px; /* Meer ruimte onder de titel */
     font-family: "Quicksand" , sans-serif , bold;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .shopnow {
@@ -370,3 +370,549 @@ header {
     }
 }
 
+.overzicht3 {
+    margin-top: 250px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center; /* Verticale uitlijning van tekst en afbeelding */
+}
+
+.text3 {
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+    margin-left: 210px;
+    padding-right: 130px;
+}
+
+.overzichtpic3 {
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+    height: 550px; /* Aangepaste hoogte van de afbeelding */
+    width: 1000px;
+    margin-right: 100px;
+    margin-left: 250px;
+}
+
+.blog {
+    margin-top: 40px; /* Meer ruimte boven de titel */
+    margin-bottom: 30px;
+    font-family: "Amaranth", cursive;
+    color: #467255;
+    font-size: 50px;
+}
+
+.blog_ov {
+    margin-top: 20px; /* Meer ruimte onder de titel */
+    font-family: "Quicksand" , sans-serif , bold;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button3_readmore {
+    margin-top: 40px; /* Meer ruimte tussen tekst en knop */
+    margin-bottom: 80px;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#467255;
+    color: aliceblue;
+    border:none;
+}
+
+.link3_readmore {
+    color:aliceblue;
+    font-family: "Quicksand", bold;
+}
+
+/* Media query voor tabletweergave */
+@media screen and (max-width: 768px) {
+    .overzicht3 {
+        flex-direction: column; /* Stel verticale weergave in */
+        text-align: center; /* Centreer de tekst en de afbeelding */
+    }
+
+    .text3 {
+        margin-left: 0; /* Verwijder de linkermarge */
+        padding-right: 0; /* Verwijder de rechtervulling */
+        padding: 0 20px; /* Voeg padding aan beide zijden toe */
+    }
+
+    .overzichtpic3 {
+        height: auto; /* Laat de hoogte zich aanpassen aan de breedte */
+        width: 100%; /* Afbeelding neemt de volledige breedte van de container in */
+        margin: 20px 0; /* Voeg marge boven en onder toe */
+    }
+
+    .blog {
+        font-size: 40px; /* Verminder de grootte van de titel */
+    }
+
+    .blog_ov {
+        font-size: 20px; /* Verminder de grootte van de tekst */
+    }
+
+    .button3_readmore {
+        font-size: 16px; /* Verminder de grootte van de knop */
+        margin-top: 20px; /* Pas de bovenmarge aan */
+        padding: 8px; /* Verklein de padding */
+    }
+}
+
+/* Media query voor GSM-weergave */
+@media screen and (max-width: 480px) {
+    .text3 {
+        padding: 0 10px; /* Verminder de padding aan beide zijden */
+        margin: 0 10px; /* Voeg marge aan beide zijden toe */
+    }
+
+    .overzichtpic3 {
+        height: auto; /* Laat de hoogte zich aanpassen aan de breedte */
+        width: 100%; /* Afbeelding neemt de volledige breedte van de container in */
+        margin: 10px 0; /* Voeg marge boven en onder toe */
+    }
+
+    .blog {
+        font-size: 30px; /* Verminder de grootte van de titel */
+    }
+
+    .blog_ov {
+        font-size: 18px; /* Verminder de grootte van de tekst */
+    }
+
+    .button3_readmore {
+        font-size: 14px; /* Verminder de grootte van de knop */
+        margin-top: 10px; /* Pas de bovenmarge aan */
+        padding: 6px; /* Verklein de padding */
+    }
+}
+
+footer {
+    background-color: #467255;
+    color: whitesmoke;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-left h3,
+.footer-right h3 {
+    font-family: "Amaranth", cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-left p,
+.footer-right ul {
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-right ul li {
+    margin-right: 20px;
+}
+
+.footer-right ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-right ul li a:hover {
+    opacity: 0.7;
+}
+
+.footer-right ul li a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Media query voor tabletweergave */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right ul {
+        justify-content: center;
+    }
+
+    .footer-right ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Media query voor GSM-weergave */
+@media screen and (max-width: 480px) {
+    .footer-left h3,
+    .footer-right h3 {
+        font-size: 20px;
+    }
+
+    .footer-left p,
+    .footer-right ul {
+        font-size: 14px;
+    }
+
+    .footer-right ul li a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+.tekst1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centreert de items horizontaal */
+    text-align: center; /* Centreert de tekst binnen de elementen */
+    padding: 40px; /* Optionele padding voor wat extra ruimte rondom de tekst */
+}
+
+.over-ons {
+    font-family: "Amaranth", cursive;
+    font-size: 50px;
+    color: #467255;
+    margin-bottom: 20px; /* Ruimte onder de heading */
+    margin-top: 100px;
+}
+
+.over-ons_text {
+    font-family: "Quicksand" , sans-serif , bold;
+    font-size: 25px;
+    font-weight:bold;
+    color: #333;
+    line-height: 1.5;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+/* Media query voor tablets */
+@media screen and (max-width: 768px) {
+    .over-ons {
+        font-size: 40px; /* Verklein de tekstgrootte voor tablets */
+        margin-top: 80px; /* Verminder de marge boven de heading */
+    }
+
+    .over-ons_text {
+        font-size: 20px; /* Verklein de tekstgrootte voor tablets */
+        max-width: 90%; /* Verhoog de maximale breedte om meer ruimte te gebruiken */
+        padding: 0 20px; /* Voeg padding toe aan beide zijden voor meer ruimte */
+    }
+}
+
+/* Media query voor mobiele telefoons */
+@media screen and (max-width: 480px) {
+    .over-ons {
+        font-size: 30px; /* Verklein de tekstgrootte nog verder voor mobiele telefoons */
+        margin-top: 60px; /* Verminder de marge boven de heading */
+    }
+
+    .over-ons_text {
+        font-size: 10px; /* Verklein de tekstgrootte voor mobiele telefoons */
+        max-width: 95%; /* Gebruik bijna de volledige breedte van het scherm */
+        padding: 0 10px; /* Voeg minder padding toe aan beide zijden */
+    }
+}
+
+.wrapper {
+    margin-top: 10%;
+    margin-bottom:10%;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.wrapper h2 {
+    font-size: 50px;
+    font-family: "Amaranth", cursive;
+    color:#467255;
+    margin-bottom: 160px;
+    margin-left: 45%;
+}
+
+.Team {
+    display:flex;
+    text-align: center;
+    width:auto;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.comments {
+    margin:5px;
+    margin-bottom: 50px;
+    width: 350px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+    font-family: "Quicksand", sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+
+.Members {
+    background-color:#c7dec7;
+    margin-left: 50px;
+}
+.Members h3 {
+    color:#467255;
+    font-family: "Amaranth"; 
+    font-size:30px;
+    margin-top: 100px;
+}
+
+.memberimg {
+   width:100px;
+   height:100px;
+   border-radius: 100%;
+   position: absolute;
+   margin-top: -70px;
+   margin-left: 10%;
+   transform: translateX(-90%);
+  
+  
+   
+}
+
+.memberimg img {
+    width:140px;
+    height:140px;
+    margin-left: 10px;
+}
+
+/* Media query voor tablets */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .wrapper h2 {
+        font-size: 40px;
+        margin-bottom: 80px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .Team {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .comments {
+        width: 80%;
+        margin-bottom: 30px;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .Members {
+        margin-left: 0;
+    }
+
+    .Members h3 {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .memberimg {
+        width: 80px;
+        height: 80px;
+        margin-top: -50px;
+    }
+
+    .memberimg img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Media query voor mobiele telefoons */
+@media screen and (max-width: 480px) {
+    .wrapper {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .wrapper h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .Team {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .comments {
+        width: 90%;
+        margin-bottom: 20px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .Members {
+        margin-left: 0;
+    }
+
+    .Members h3 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .memberimg {
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+    }
+
+    .memberimg img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.missie {
+    margin-top: 40px; /* Meer ruimte boven de titel */
+    margin-bottom: 30px;
+    font-family: "Amaranth", cursive;
+    color: #467255;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.missie_text{
+    font-family: "Quicksand" , sans-serif , bold;
+    font-size: 25px;
+    font-weight:bold;
+    color: #333;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 80px;
+}
+
+
+
+.duurzaamheid {
+    margin-top: 40px; /* Meer ruimte boven de titel */
+    margin-bottom: 40px;
+    font-family: "Amaranth", cursive;
+    color: #467255;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.duurzaamheid_text {
+    font-family: "Quicksand" , sans-serif , bold;
+    font-size: 25px;
+    font-weight:bold;
+    color: #333;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 8%;
+}
+
+.duurzaamheidfoto {
+    margin-left: 530px;
+    width: 800px;
+    height:500px;
+    margin-bottom: 10%;
+}
+
+.eerlijkheid {
+    margin-top: 40px; /* Meer ruimte boven de titel */
+    margin-bottom: 40px;
+    font-family: "Amaranth", cursive;
+    color: #467255;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.eerlijkheid_text {
+    font-family: "Quicksand" , sans-serif , bold;
+    font-size: 25px;
+    font-weight:bold;
+    color: #333;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20%;
+}
+
+/* Media query voor tablets */
+@media screen and (max-width: 768px) {
+    .missie, .duurzaamheid, .eerlijkheid {
+        font-size: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .missie_text, .duurzaamheid_text, .eerlijkheid_text {
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .duurzaamheidfoto {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query voor mobiele telefoons */
+@media screen and (max-width: 480px) {
+    .missie, .duurzaamheid, .eerlijkheid {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .missie_text, .duurzaamheid_text, .eerlijkheid_text {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .duurzaamheidfoto {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+}
