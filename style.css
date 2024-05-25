@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    background-color:ghostwhite;
+}
+
 .a_li {
     font-family: "Quicksand", sans-serif;
     font-size: 25px;
@@ -134,7 +138,7 @@ header {
 
 .samen_naar {
     margin-top: 40px; /* Meer ruimte boven de titel */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: "Amaranth", cursive;
     color: #467255;
     font-size: 50px;
@@ -213,3 +217,156 @@ header {
         font-size: 16px; /* Verminder de grootte van de knop voor GSM */
     }
 }
+
+#imageSlider {
+    width: 800px;
+    max-height: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top:110px;
+    border: 15px solid #467255;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imgslider {
+    flex: 0 0 100%;
+    width: 800px;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+    .homebutton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #467255;
+    color: aliceblue;
+    border:none;
+  
+}
+
+ #prevBtn{
+    left: 10px;
+}
+
+  #nextBtn {
+    right: 10px;
+}
+
+.text2 {
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+    margin-left: 210px;
+    padding-right: 130px;
+}
+
+.ons_aanbod {
+    margin-top: 40px; /* Meer ruimte boven de titel */
+    margin-bottom: 40px;
+    font-family: "Amaranth", cursive;
+    color: #467255;
+    font-size: 50px;
+}
+
+.products_ov {
+    margin-top: 20px; /* Meer ruimte onder de titel */
+    font-family: "Quicksand" , sans-serif , bold;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.shopnow {
+    /*position: absolute;*/
+    top: 50%;
+    margin-top: 100px;
+    margin-left: 650px;
+    transform: translateY(-50%);
+    font-size: 23px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    background-color:#467255;
+    color: aliceblue;
+    border:none;
+  
+}
+
+/* Media query voor tabletweergave */
+@media screen and (max-width: 768px) {
+    #imageSlider {
+        width: 90%; /* Pas de breedte aan */
+        margin-top: 50px; /* Pas de bovenmarge aan */
+        margin-bottom: 30px; /* Pas de ondermarge aan */
+    }
+
+    .imgslider {
+        width: 100%; /* Afbeeldingen worden 100% breedte */
+        height: auto; /* Behoudt de aspect ratio */
+        margin-bottom: 0; /* Verwijder de ondermarge */
+    }
+
+    .homebutton {
+        font-size: 16px; /* Verklein de lettergrootte */
+        padding: 8px; /* Verklein de padding */
+        margin-left: 10px; /* Voeg een beetje ruimte toe aan de linkerkant */
+    }
+
+    .text2 {
+        margin-left: 0; /* Verwijder de linkermarge */
+        padding-right: 0; /* Verwijder de rechtervulling */
+        text-align: center; /* Centreer de tekst */
+    }
+
+    .shopnow {
+        margin-left: 0; /* Verwijder de linkermarge */
+        margin-top: 30px; /* Pas de bovenmarge aan */
+        transform: none; /* Verwijder de verticale transformatie */
+    }
+}
+
+/* Media query voor GSM-weergave */
+@media screen and (max-width: 480px) {
+    #imageSlider {
+        margin-top: 30px; /* Pas de bovenmarge aan */
+        margin-bottom: 20px; /* Pas de ondermarge aan */
+         margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .imgslider {
+        margin-bottom: 0; /* Verwijder de ondermarge */
+    }
+
+    .homebutton {
+        font-size: 14px; /* Verklein de lettergrootte */
+        padding: 6px; /* Verklein de padding */
+        margin-left: 5px; /* Voeg een beetje ruimte toe aan de linkerkant */
+    }
+
+    .text2 {
+        text-align: center; /* Centreer de tekst */
+        padding: 0 20px; /* Voeg ruimte toe aan beide zijden van de tekst */
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+
+    .shopnow {
+        margin-top: 20px; /* Pas de bovenmarge aan */
+        transform: none; /* Verwijder de verticale transformatie */
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
