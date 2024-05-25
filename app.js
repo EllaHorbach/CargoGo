@@ -1,6 +1,3 @@
-
-
-// JavaScript om de afbeelding te wijzigen op basis van de geselecteerde kleur
 document.addEventListener('DOMContentLoaded', function () {
     const colorSelect = document.querySelectorAll('.colour-select div');
 
@@ -27,9 +24,25 @@ function changeImage(color) {
         case 'white':
             productImg.src = './img_producten/bak_fiets_wit.jpg';
             break;
+        case 'grey':
+            productImg.src = './img_producten/long_tail_grijs.png';
+            break;
+        case 'bronze':
+            productImg.src = './img_producten/long_tail_brons.png';
+            break;
+        case 'beige':
+            productImg.src = './img_producten/long_tail_beige.png';
+            break;
+        case 'green':
+            productImg.src = './img_producten/long_tail_groen.png';
+            break;
+        case 'whitesmoke':
+            productImg.src = './img_producten/long_tail_wit.png';
+            break;
+        case 'black':
+            productImg.src = './img_producten/long_tail_zwart.png';
+            break;
         default:
             break;
     }
 }
-
-
