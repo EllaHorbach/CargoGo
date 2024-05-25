@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="product.css" rel="stylesheet">
     <title>CargoGo</title>
+
+    
 </head>
 <body>
     <header>
@@ -23,21 +25,28 @@
                 <li><a class="a_li" href="blog.html">Blog</a></li>
             </ul>
         </nav>
-
     </header>
+
+    <div class="colour-select">
+        <h3>Choose your colour</h3>
+        <!-- Kleurenselectie-elementen toevoegen -->
+        <div id="white" onclick="changeImage('white')"></div>
+        <div id="black" onclick="changeImage('black')"></div>
+    </div>
+
     <div class="product">
-        <img src="./img_producten/urban_craft_zwart.png" alt="" class="productImg" height="500px">
+        <img src="./img_producten/urban_craft_wit.png" alt="" class="productImg" height="500px">
         <div class="productDetails">
             <h1 class="productTitel"> <br> Urban craft<br>elektrische cargo fiets</h1>
             <h2 class="productPrice">€ 5 279,10 </h2>
             <p class="productDesc">
                 Met de nieuwe Business Range van Urban Arrow probeert het merk voor verschillende beroepsgroepen een passende oplossing te vinden.<br>
                 De nieuwe Urban Arrow Craft is ontworpen om het werk van elke stedelijke servicemonteur makkelijker, leuker en gezonder te maken.
-                
             </p>
         </div>
         <button class="productButton">BUY NOW!</button>
     </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const menuIcon = document.querySelector('.menu-icon');
@@ -47,6 +56,21 @@
                 navLinks.classList.toggle('show');
             });
         });
+
+        // JavaScript-functie om de afbeelding van Urban Arrow fiets te wijzigen op basis van de geselecteerde kleur
+        function changeImage(color) {
+            const productImg = document.querySelector('.productImg');
+            switch (color) {
+                case 'white':
+                    productImg.src = './img_producten/urban_craft_wit.png';
+                    break;
+                case 'black':
+                    productImg.src = './img_producten/urban_craft_zwart.png';
+                    break;
+                default:
+                    break;
+            }
+        }
     </script>
 </body>
 </html>

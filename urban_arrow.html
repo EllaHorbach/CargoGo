@@ -25,6 +25,14 @@
         </nav>
 
     </header>
+
+    <div class="colour-select">
+        <h3>Choose your colour</h3>
+        <!-- Kleurenselectie-elementen toevoegen -->
+        <div id="white" onclick="changeImage('white')"></div>
+        <div id="black" onclick="changeImage('black')"></div>
+    </div>
+
     <div class="product">
         <img src="./img_producten/elktr_cargo_wit.jpg" alt="" class="productImg" height="560px"  >
         <div class="productDetails">
@@ -49,5 +57,33 @@
             });
         });
     </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav__links');
+
+        menuIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('show');
+        });
+    });
+
+    // JavaScript-functie om de afbeelding van Urban Arrow fiets te wijzigen op basis van de geselecteerde kleur
+    function changeImage(color) {
+        const productImg = document.querySelector('.productImg');
+        switch (color) {
+            case 'white':
+                productImg.src = './img_producten/elktr_cargo_wit.jpg';
+                break;
+            case 'black':
+                productImg.src = './img_producten/elktr_cargo_zwart.jpg';
+                break;
+            default:
+                break;
+        }
+    }
+</script>
 </body>
 </html>
+
+

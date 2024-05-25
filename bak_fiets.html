@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="product.css" rel="stylesheet">
+    
+
     <title>CargoGo</title>
 </head>
 <body>
@@ -28,10 +30,11 @@
     
     <div class="colour-select">
         <h3>Choose your colour</h3>
-            <div id="red"></div>
-            <div id="blue"></div>
-            <div id="white"></div>
-        </div>
+        <!-- Voeg onclick-attributen toe aan de div's voor de kleurselectie -->
+        <div id="blue" onclick="changeImage('blue')"></div>
+        <div id="red" onclick="changeImage('red')"></div>
+        <div id="white" onclick="changeImage('white')"></div>
+    </div>
 
     
     
@@ -55,11 +58,30 @@
         document.addEventListener('DOMContentLoaded', function () {
             const menuIcon = document.querySelector('.menu-icon');
             const navLinks = document.querySelector('.nav__links');
-
             menuIcon.addEventListener('click', function () {
                 navLinks.classList.toggle('show');
             });
         });
     </script>
+
+    <script>
+        function changeImage(color) {
+            const productImg = document.getElementById('productImg');
+            switch (color) {
+                case 'steelblue':
+                    productImg.src = './img_producten/bak_fiets_blauw.jpg';
+                    break;
+                case 'red':
+                    productImg.src = './img_producten/bak_fiets_rood.jpg';
+                    break;
+                case 'white':
+                    productImg.src = './img_producten/bak_fiets_wit.jpg';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+    <script src="app.js"></script>
 </body>
 </html>

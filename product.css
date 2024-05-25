@@ -117,6 +117,7 @@ h3 {
 
 
 
+
 .colour-select div {
     background: #333;
     width: 50px;
@@ -138,6 +139,13 @@ h3 {
     margin-top: 10px; /* Verplaats de kleurselectie 10 pixels naar beneden */
 }
 
+
+.colour-select #blue{
+    background: steelblue;
+    border: 1px solid black;
+
+}
+
 .colour-select #red{
     background: red;
     border: 1px solid black;
@@ -145,15 +153,34 @@ h3 {
     
   
 }
-.colour-select #blue{
-    background: steelblue;
-    border: 1px solid black;
-
-}
 .colour-select #white{
     background: white;
     border: 1px solid black;
 }
+
+
+.colour-select {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.colour-select div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid black; /* Rand rond de cirkels */
+}
+
+/* Voeg de achtergrondkleuren toe aan de cirkels */
+#grey { background-color: grey; }
+#bronze { background-color: lightsalmon }
+#beige { background-color: beige; }
+#green { background-color: lightgreen; }
+#whitesmoke { background-color: whitesmoke; }
+#black { background-color: black; }
 
 
 
@@ -315,7 +342,12 @@ h3 {
     .productDesc {
         font-size: 26px; /* Verhoog de lettergrootte van p met 100px */
     }
-
+    .productImg {
+        height: 560px; /* Hoogte van de afbeelding */
+        width: auto; /* Breedte wordt automatisch geschaald om de verhoudingen te behouden */
+        max-width: 100%; /* Zorgt ervoor dat de afbeelding niet breder wordt dan de container */
+    }
+    
    
     
     
@@ -348,6 +380,35 @@ h3 {
     }
 }
 
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+ }
+ .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centreer de items horizontaal */
+    text-align: center; /* Centreer de tekst */
+ }
+ .featureIcon{
+    width: 50px;
+    height: 50px;
+ }
+ .featureTitel{
+    font-size: 20px;
+    font-weight: 300px;
+    margin: 20px;
+ }
+ .featureDesc{
+    color: grey;
+    width: 50%;
+    height: 100px;
+ }
+
+ 
 
 
 

@@ -23,10 +23,20 @@
                 <li><a class="a_li" href="blog.html">Blog</a></li>
             </ul>
         </nav>
-
     </header>
+
+    <div class="colour-select">
+        <h3>Choose your color</h3>
+        <div id="grey" onclick="changeImage('grey')"></div>
+        <div id="bronze" onclick="changeImage('bronze')"></div>
+        <div id="beige" onclick="changeImage('beige')"></div>
+        <div id="green" onclick="changeImage('green')"></div>
+        <div id="whitesmoke" onclick="changeImage('whitesmoke')"></div>
+        <div id="black" onclick="changeImage('black')"></div>
+    </div>
+
     <div class="product">
-        <img src="./img_producten/long_tail_grijs.png" alt="" class="productImg" height="560px" >
+        <img src="./img_producten/long_tail_grijs.png" alt="" class="productImg" height="560px">
         <div class="productDetails">
             <h1 class="productTitel">longtail <br>elektrische cargo fiets</h1>
             <h2 class="productPrice">€ 3 869,21</h2>
@@ -35,20 +45,11 @@
                 Deze fiets combineert stijl en functionaliteit voor moeiteloos rijden door de stad. <br>
                 Met zijn ruime bagagedrager is hij perfect voor het vervoeren van boodschappen of andere ladingen. <br>
                 Een betrouwbare metgezel voor dagelijkse ritten en avonturen in de stad."
-                
             </p>
         </div>
         <button class="productButton">BUY NOW!</button>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuIcon = document.querySelector('.menu-icon');
-            const navLinks = document.querySelector('.nav__links');
 
-            menuIcon.addEventListener('click', function () {
-                navLinks.classList.toggle('show');
-            });
-        });
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
