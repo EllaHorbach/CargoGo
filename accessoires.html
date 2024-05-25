@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
+    <title>CargoGo | producten</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo"> <a href="homepage.html"> CargoGo </a></div>
+        <nav class="navbar">
+            <div class="menu-icon">
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+            </div>
+            <ul class="nav__links">
+                <li><a class="a_li" href="homepage.html">Home</a></li>
+                <li><a class="a_li" href="aboutus.html">About us</a></li>
+                <li><a class="a_li" href="producten.html">Shop</a></li>
+                <li><a class="a_li" href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    </header>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./img_producten/elktr_cargo_wit.jpg" alt="" class="sliderImg" >
+                <div class="slideBg"></div>
+                <h1 class="sliderTitel">fietsen</h1>
+                <a href="bak_fiets.html" class="buyButton">BUY NOW!</a>
+            </div>
+            
+            <div class="sliderItem">
+                <img src="./img_producten/urban_craft_wit.png" alt="" class="sliderImg" >
+                <div class="slideBg"></div>
+                <h1 class="sliderTitel"> <br>Urban craft<br>elektrische cargo fiets</h1>
+                <h2 class="sliderPrice">€ 5 279,10</h2>
+                <a href="urban_arrow_craft.html" class="buyButton">BUY NOW!</a>
+            </div> 
+
+            <div class="sliderItem">
+                <img src="./img_producten/long_tail_grijs.png" alt="" class="sliderImg" >
+                <div class="slideBg"></div>
+                <h1 class="sliderTitel"><br> longtail <br>elektrische cargo fiets</h1>
+                <h2 class="sliderPrice">€ 3 869,21</h2>
+                <a href="long_tail.html" class="buyButton">BUY NOW!</a>
+            </div>
+            
+            <div class="sliderItem">
+                <img src="./img_producten/elktr_cargo_wit.jpg" alt="" class="sliderImg" >
+                <div class="slideBg"></div>
+                <h1 class="sliderTitel">Urban </br> elektrische cargo fiets</h1>
+                <h2 class="sliderPrice">€ 4 235,71 </h2>
+                <a href="urban_arrow.html" class="buyButton">BUY NOW!</a>
+            </div>          
+        </div>
+    </div>   
+    <div class="features">
+        <div class="feature">
+                <img src="./img_producten/free_shopping_icon.png" class="featureIcon" >
+                <span class="featureTitel">FREE SHIPPING</span>
+                <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+                <img class="featureIcon" src="./img_producten/return_icon.png" >
+                <span class="featureTitel">30 DAYS RETURN</span>
+                <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+                <img class="featureIcon" src="./img_producten/gift-card_icon.png" >
+                <span class="featureTitel">GIFT CARDS</span>
+                <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+                <img class="featureIcon" src="./img_producten/contact_icon.png" >
+                <span class="featureTitel">CONTACT US!</span>
+                <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav__links');
+
+            menuIcon.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
