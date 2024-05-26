@@ -180,3 +180,82 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #467255;
+    color: whitesmoke;
+    margin-top: 40px; /* Voeg deze regel toe voor extra ruimte */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-left h3,
+.footer-right h3 {
+    font-family: "Amaranth", cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-left p,
+.footer-right ul {
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-right ul li {
+    margin-right: 20px;
+}
+
+.footer-right ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-right ul li a:hover {
+    opacity: 0.7;
+}
+
+.footer-right ul li a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}

@@ -23,6 +23,7 @@
                 <li><a class="a_li" href="aboutus.html">About us</a></li>
                 <li><a class="a_li" href="shop.html">Shop</a></li>
                 <li><a class="a_li" href="blog.html">Blog</a></li>
+                <li><a class="a_li" href="winkelwagen.html">Winkelwagen</a></li>
             </ul>
         </nav>
 
@@ -43,7 +44,7 @@
             </p>
         </div>
         
-        <button class="productButton">BUY NOW!</button>
+        <button class="productButton" onclick="addToCart()">BUY NOW!</button>
     </div>
 
     <footer>
@@ -76,9 +77,21 @@
                 navLinks.classList.toggle('show');
             });
         });
-    </script>
 
-    
-    <script src="app.js"></script>
+        function addToCart() {
+            const product = {
+                title: document.querySelector('.productTitel').textContent,
+                price: document.querySelector('.productPrice').textContent,
+                description: document.querySelector('.accessoiresDesc').textContent,
+                imageSrc: document.querySelector('.accessoiresImg').src
+            };
+
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            cartItems.push(product);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            alert('Product is toegevoegd aan het winkelwagentje!');
+        }
+    </script>
 </body>
 </html>

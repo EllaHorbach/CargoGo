@@ -6,8 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="product.css" rel="stylesheet">
     <title>CargoGo</title>
-
-    
 </head>
 <body>
     <header>
@@ -23,6 +21,7 @@
                 <li><a class="a_li" href="aboutus.html">About us</a></li>
                 <li><a class="a_li" href="shop.html">Shop</a></li>
                 <li><a class="a_li" href="blog.html">Blog</a></li>
+                <li><a class="a_li" href="winkelwagen.html">Winkelwagen</a></li>
             </ul>
         </nav>
     </header>
@@ -44,7 +43,7 @@
                 De nieuwe Urban Arrow Craft is ontworpen om het werk van elke stedelijke servicemonteur makkelijker, leuker en gezonder te maken.
             </p>
         </div>
-        <button class="productButton">BUY NOW!</button>
+        <button class="productButton" onclick="addToCart()">BUY NOW!</button>
     </div>
 
     <footer>
@@ -92,6 +91,23 @@
                 default:
                     break;
             }
+        }
+
+        function addToCart() {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const productTitle = document.querySelector('.productTitel').textContent.trim();
+            // Product toevoegen aan de winkelwagen
+            const product = {
+                title: productTitle,
+                price: document.querySelector('.productPrice').textContent.trim(),
+                description: document.querySelector('.productDesc').textContent.trim(),
+                imageSrc: document.querySelector('.productImg').src
+            };
+
+            cartItems.push(product);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            alert('Product is toegevoegd aan het winkelwagentje!');
         }
     </script>
 </body>

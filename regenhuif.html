@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="product.css" rel="stylesheet">
-    
-
     <title>CargoGo</title>
 </head>
 <body>
@@ -23,27 +21,21 @@
                 <li><a class="a_li" href="aboutus.html">About us</a></li>
                 <li><a class="a_li" href="shop.html">Shop</a></li>
                 <li><a class="a_li" href="blog.html">Blog</a></li>
+                <li><a class="a_li" href="winkelwagen.html">Winkelwagen</a></li>
             </ul>
         </nav>
-
     </header>
-    
-  
-    
-    
+
     <div class="product">
-        
-        <img src="./img_producten/regenhuif.jpg" alt="" class="accessoiresImg" height="650px" >
+        <img src="./img_producten/regenhuif.jpg" alt="" class="accessoiresImg" height="650px">
         <div class="productDetails">
-            <h1 class="productTitel">regenhuif</h1>
-            <h2 class="productPrice">€ 379,00 inclusief btw </h2>
+            <h1 class="productTitel">Regenhuif</h1>
+            <h2 class="productPrice">€ 379,00 inclusief btw</h2>
             <p class="productDesc">
                 De Urban Arrow Regenhuif Plus is je betrouwbare maatje voor zorgeloze fietsavonturen in alle weersomstandigheden.
-                
             </p>
         </div>
-        
-        <button class="productButton">BUY NOW!</button>
+        <button class="productButton" onclick="addToCart('Regenhuif')">BUY NOW!</button>
     </div>
 
     <footer>
@@ -72,13 +64,30 @@
         document.addEventListener('DOMContentLoaded', function () {
             const menuIcon = document.querySelector('.menu-icon');
             const navLinks = document.querySelector('.nav__links');
+
             menuIcon.addEventListener('click', function () {
                 navLinks.classList.toggle('show');
             });
         });
-    </script>
 
-    
-    <script src="app.js"></script>
+        // JavaScript-functie om het product aan de winkelwagen toe te voegen
+        function addToCart(productName) {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const productTitle = document.querySelector('.productTitel').textContent.trim();
+            
+            // Product toevoegen aan de winkelwagen
+            const product = {
+                title: productTitle,
+                price: document.querySelector('.productPrice').textContent.trim(),
+                description: document.querySelector('.productDesc').textContent.trim(),
+                imageSrc: document.querySelector('.accessoiresImg').src
+            };
+
+            cartItems.push(product);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            alert('Product is toegevoegd aan het winkelwagentje!');
+        }
+    </script>
 </body>
 </html>

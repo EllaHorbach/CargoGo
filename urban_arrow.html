@@ -21,9 +21,9 @@
                 <li><a class="a_li" href="aboutus.html">About us</a></li>
                 <li><a class="a_li" href="shop.html">Shop</a></li>
                 <li><a class="a_li" href="blog.html">Blog</a></li>
+                <li><a class="a_li" href="winkelwagen.html">Winkelwagen</a></li>
             </ul>
         </nav>
-
     </header>
 
     <div class="colour-select">
@@ -45,7 +45,7 @@
                 
             </p>
         </div>
-        <button class="productButton">BUY NOW!</button>
+        <button class="productButton" onclick="addToCart()">BUY NOW!</button>
     </div>
 
     <footer>
@@ -81,6 +81,62 @@
         });
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav__links');
+
+            menuIcon.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+
+        // JavaScript-functie om de afbeelding van Urban Arrow fiets te wijzigen op basis van de geselecteerde kleur
+        function changeImage(color) {
+            const productImg = document.querySelector('.productImg');
+            switch (color) {
+                case 'white':
+                    productImg.src = './img_producten/elktr_cargo_wit.jpg';
+                    break;
+                case 'black':
+                    productImg.src = './img_producten/elktr_cargo_zwart.jpg';
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // JavaScript-functie om het product aan de winkelwagen toe te voegen
+        function addToCart() {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const productTitle = document.querySelector('.productTitel').textContent.trim();
+            const productAlreadyAdded = cartItems.some(item => item.title === productTitle);
+
+            if (!productAlreadyAdded) {
+                // Product toevoegen aan de winkelwagen
+                const product = {
+                    title: productTitle,
+                    price: document.querySelector('.productPrice').textContent.trim(),
+                    description: document.querySelector('.productDesc').textContent.trim(),
+                    imageSrc: document.querySelector('.productImg').src
+                };
+
+                cartItems.push(product);
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                console.log(JSON.parse(localStorage.getItem('cartItems')));
+
+
+                alert('Product is toegevoegd aan het winkelwagentje!');
+            } else {
+                alert('Dit product is al aan het winkelwagentje toegevoegd!');
+            }
+        }
+    </script>
+
+
+
+
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const menuIcon = document.querySelector('.menu-icon');
@@ -105,7 +161,30 @@
                 break;
         }
     }
+
+    // JavaScript-functie om het product aan de winkelwagen toe te voegen
+    function addToCart() {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        const productTitle = document.querySelector('.productTitel').textContent.trim();
+
+        // Product toevoegen aan de winkelwagen
+        const product = {
+            title: productTitle,
+            price: document.querySelector('.productPrice').textContent.trim(),
+            description: document.querySelector('.productDesc').textContent.trim(),
+            imageSrc: document.querySelector('.productImg').src
+        };
+
+        cartItems.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        console.log(JSON.parse(localStorage.getItem('cartItems')));
+
+        alert('Product is toegevoegd aan het winkelwagentje!');
+    }
 </script>
+
+
+
 </body>
 </html>
 

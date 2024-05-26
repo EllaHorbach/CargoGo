@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="product.css" rel="stylesheet">
-    
-
     <title>CargoGo</title>
 </head>
 <body>
@@ -23,26 +21,20 @@
                 <li><a class="a_li" href="aboutus.html">About us</a></li>
                 <li><a class="a_li" href="shop.html">Shop</a></li>
                 <li><a class="a_li" href="blog.html">Blog</a></li>
+                <li><a class="a_li" href="winkelwagen.html">Winkelwagen</a></li>
             </ul>
         </nav>
-
     </header>
     
-  
-    
-    
     <div class="product">
-        
         <img src="./img_producten/slot.jpg" alt="" class="accessoiresImg" height="650px" >
         <div class="productDetails">
             <h1 class="productTitel">slot</h1>
             <h2 class="productPrice">€ 119,00 inclusief btw </h2>
             <p class="accessoiresDesc">
                 Topklasse Abus Ivy 140 cm kettingslot, speciaal geselecteerd om jouw cargo fiets veilig te parkeren op parkeerlocaties met een hoog diefstalrisico. ART keuring 3 sterren voor extra zekerheid. Met zijn 140 cm lengte, zet je je cargo fiets eenvoudig aan een paal zodat hij niet makkelijk meegenomen kan worden. Zeer compact op te vouwen, het slot kun je ook bijvoorbeeld rond je zadelpen wikkelen.
-                
             </p>
         </div>
-        
         <button class="productButton">BUY NOW!</button>
     </div>
 
@@ -51,7 +43,7 @@
             <div class="footer-left">
                 <h3>CargoGo</h3>
                 <p>Adres: Mechelsesteenweg 249, 2000 Antwerpen </p>
-                <p>Email: Cargogo@gmail.com 
+                <p>Email: Cargogo@gmail.com </p>
                 <p>Telefoon: +32 483 65 53 74 </p>
             </div>
             <div class="footer-right">
@@ -75,10 +67,27 @@
             menuIcon.addEventListener('click', function () {
                 navLinks.classList.toggle('show');
             });
-        });
-    </script>
 
-    
-    <script src="app.js"></script>
+            const buyButton = document.querySelector('.productButton');
+            buyButton.addEventListener('click', function () {
+                addToCart();
+            });
+        });
+
+        function addToCart() {
+            const product = {
+                title: document.querySelector('.productTitel').textContent.trim(),
+                price: document.querySelector('.productPrice').textContent.trim(),
+                description: document.querySelector('.accessoiresDesc').textContent.trim(),
+                imageSrc: document.querySelector('.accessoiresImg').src
+            };
+
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            cartItems.push(product);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            alert('Product is toegevoegd aan het winkelwagentje!');
+        }
+    </script>
 </body>
 </html>
