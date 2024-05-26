@@ -310,7 +310,11 @@ h3 {
     padding: 50px;
 }
 
-
+.accessoiresDesc {
+    color: grey;
+    width: 60%;
+    font-size: 24px;
+}
 
 
 
@@ -518,6 +522,64 @@ h3 {
 
 
 
+
+
+
+
+
+
+
+.overzicht3 {
+    margin-top: 250px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center; /* Verticale uitlijning van tekst en afbeelding */
+}
+
+.text3 {
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+    margin-left: 210px;
+    padding-right: 130px;
+}
+
+.overzichtpic3 {
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+    height: 550px; /* Aangepaste hoogte van de afbeelding */
+    width: 1000px;
+    margin-right: 100px;
+    margin-left: 250px;
+}
+
+.blog {
+    margin-top: 40px; /* Meer ruimte boven de titel */
+    margin-bottom: 30px;
+    font-family: "Amaranth", cursive;
+    color: #467255;
+    font-size: 50px;
+}
+
+.blog_ov {
+    margin-top: 20px; /* Meer ruimte onder de titel */
+    font-family: "Quicksand" , sans-serif , bold;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button3_readmore {
+    margin-top: 40px; /* Meer ruimte tussen tekst en knop */
+    margin-bottom: 80px;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#467255;
+    color: aliceblue;
+    border:none;
+}
+
+.link3_readmore {
+    color:aliceblue;
+    font-family: "Quicksand", bold;
+}
 
 
 

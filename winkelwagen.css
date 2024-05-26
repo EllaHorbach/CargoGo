@@ -1,0 +1,182 @@
+body {
+    
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.a_li {
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(9, 9, 9);
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #467255;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 45px;
+}
+
+.logo a {
+    font-family: "Amaranth", cursive;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links li {
+    margin-left: 60px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    background-color: rgba(161, 235, 162, 0.845);
+    padding: 15px;
+    border-radius: 5%;
+}
+
+.menu-icon {
+    display: none; /* Hide the menu icon by default */
+    cursor: pointer;
+}
+
+.menu-icon__line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .nav__links {
+        display: none; 
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #467255;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .nav__links.show {
+        display: flex; 
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+
+    .nav__links li {
+        margin-bottom: 25px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25em; /* Vergroot de basistekstgrootte */
+}
+
+#cartContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px; /* Vergroot de padding */
+}
+
+#cartItems {
+    border-bottom: 2px solid #ccc; /* Verhoog de dikte van de border */
+    padding-bottom: 20px; /* Vergroot de padding */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Vergroot de margin */
+}
+
+.cart-item-image {
+    width: 250px; /* Vergroot de breedte */
+    height: auto;
+    margin-right: 20px; /* Vergroot de margin */
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    font-size: 20px; /* Vergroot de tekstgrootte */
+}
+
+.cart-item-price {
+    margin-left: 30px; /* Vergroot de margin */
+    font-weight: bold;
+    font-size: 18px; /* Vergroot de tekstgrootte */
+    white-space: nowrap; /* Zorgt ervoor dat de tekst op één regel blijft */
+}
+
+#cartTotal {
+    text-align: right;
+    margin-top: 30px; /* Vergroot de margin */
+    font-size: 1.25em; /* Vergroot de tekstgrootte */
+}
+
+#totalAmount {
+    font-weight: bold;
+    font-size: 1.25em; /* Vergroot de tekstgrootte */
+}
+
+#checkoutButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Vergroot de padding */
+    font-size: 1.25em; /* Vergroot de tekstgrootte */
+    cursor: pointer;
+}
+
+
+
+
+

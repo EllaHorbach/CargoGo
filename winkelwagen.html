@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winkelwagen</title>
+    <link rel="stylesheet" href="winkelwagen.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="homepage.html">CargoGo</a></div>
+        <nav class="navbar">
+            <div class="menu-icon">
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+            </div>
+            <ul class="nav__links">
+                <li><a class="a_li" href="homepage.html">Home</a></li>
+                <li><a class="a_li" href="aboutus.html">About us</a></li>
+                <li><a class="a_li" href="shop.html">Shop</a></li>
+                <li><a class="a_li" href="blog.html">Blog</a></li>
+                <li><a class="a_li" href="winkelwagen.html">Winkelwagen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="cartContainer">
+        <h2>Winkelwagentje</h2>
+        <div id="cartItems">
+            <p id="emptyCartMessage">Het winkelwagentje is leeg</p>
+        </div>
+        <div id="cartTotal">
+            <p>Totaal: <span id="totalAmount">€ 0.00</span></p>
+            <button id="checkoutButton">Afrekenen</button>
+        </div>
+    </div>
+
+    <script src="winkelwagen.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
+    
+
+    <title>CargoGo</title>
+</head>
+<body>
+    <header>
+        <div class="logo"> <a href="homepage.html"> CargoGo </a></div>
+        <nav class="navbar">
+            <div class="menu-icon">
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+            </div>
+            <ul class="nav__links">
+                <li><a class="a_li" href="homepage.html">Home</a></li>
+                <li><a class="a_li" href="aboutus.html">About us</a></li>
+                <li><a class="a_li" href="shop.html">Shop</a></li>
+                <li><a class="a_li" href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+  
+    <section class="overzicht3">
+        <div class="text3">
+            <h2 class="blog">
+                Koop je een longtail of een bakfiets?
+            </h2>
+
+            <p class="blog_ov">
+                De verkoop van elektrische longtail-fietsen schiet omhoog en overvleugelde vorig jaar die van de e-bakfietsen. De een is wendbaarder, in de ander zit uw kroost meer beschut.
+                Wie geregeld aan een schoolpoort passeert, kan er niet naast kijken. De longtail, een fiets met een verlengd bagagerek (waarmee je kinderen of vracht kunt vervoeren) is aan een razendsnelle opmars bezig. Vorig jaar werden in België 7.520 elektrisch aangedreven longtails verkocht, meer dan dubbel zoveel als in 2022 (+134 procent), blijkt uit de laatste cijfers van federatie Traxio. In het elektrische segment overvleugelt de longtail voor het eerst de bakfiets, waarvan de verkoop met 14 procent steeg....
+
+                <strong> <em> Ontdek alle nieuwtjes over cargofietsen op onze onze blog! Updates gebeuren maandelijks. </em></strong>
+            </p>
+
+
+            <button class="button3_readmore">
+                <a class="link3_readmore" href="blog.html"> <strong> LEES MEER </strong></a>
+            </button>
+
+            <div class="image">
+                <img class="overzichtpic3" src="Images/blog image.jpg">
+            </div>
+        </div>
+
+
+    </section>
+   
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>CargoGo</h3>
+                <p>Adres: Mechelsesteenweg 249, 2000 Antwerpen </p>
+                <p>Email: Cargogo@gmail.com 
+                <p>Telefoon: +32 483 65 53 74 </p>
+            </div>
+            <div class="footer-right">
+                <h3>Volg ons</h3>
+                <ul class="socials">
+                    <li><a href="https://www.instagram.com/cargogo"><img class="icons" src="Images/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/cargogo"><img class="icons" src="Images/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.twitter.com/cargogo"><img class="icons" src="Images/twitter-x.svg" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CargoGo. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav__links');
+            menuIcon.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
