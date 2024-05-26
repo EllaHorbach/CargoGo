@@ -111,7 +111,16 @@ header {
     object-fit: cover;
 }
 
-
+h2{
+    flex: 1; /* Neemt flexibel ruimte in binnen de sectie */
+  
+    padding-top: 20px;
+    padding-bottom: 10px; 
+    font-size: 40px;
+    color: #467255;
+    font-weight: bold;
+    font-family: "Amaranth", cursive;
+}
 
 
 
